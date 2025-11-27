@@ -11,7 +11,7 @@ bot = AsyncTeleBot(os.environ['TEST_BOT_TOKEN'])
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 async def send_welcome(message):
-    text = 'Привет! \nЧем я могу вам помочь?'
+    text = 'абоба'
     await bot.reply_to(message, text)
 
 # Handle all other messages with content_type 'text' (content_types defaults to ['text'])
